@@ -1,14 +1,17 @@
+import { ReactNode } from "react"
 
 interface Button{
     title:string,
-    action:any
+    action:any,
+    icon:ReactNode
 }
 
 
-export const FunctionalButtons = ({title,action}:Button) => {
+export const FunctionalButtons = ({title,action,icon}:Button) => {
+   console.log(icon)
   return (
     <div>
-      <button onClick={action}>{title}</button>  
+      <button style={{display:"flex",alignItems:'center',justifyContent:'space-between'}} onClick={action}>{icon} {title}</button>  
     </div>
   )
 }

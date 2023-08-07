@@ -12,7 +12,7 @@ async function getPromptData(prompt: string) {
         },
         { role: "user", content: `${prompt}` },
       ],
-      max_tokens: 50,
+      max_tokens: 100,
       temperature: 0.8,
     });
 

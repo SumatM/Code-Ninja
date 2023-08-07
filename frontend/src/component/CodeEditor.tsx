@@ -1,19 +1,27 @@
-import MonacoEditor from 'react-monaco-editor';
+import React from 'react';
+import AceEditor from 'react-ace';
+import 'ace-builds/src-noconflict/mode-javascript';
+import 'ace-builds/src-noconflict/theme-monokai';
 
-interface Code {
-  code:string,
-  onChange:any
+interface CodeEditorProps {
+  code: string;
+  onChange: (newCode: string) => void;
 }
 
-const CodeEditor = ({ code, onChange}:Code) => {
+const CodeEditor: React.FC<CodeEditorProps> = ({ code, onChange }) => {
   return (
-    <MonacoEditor
+    <AceEditor
       width="100%"
-      height="500"
-      language="javascript" 
-      theme="vs-dark" 
+      height="100vh"
+      mode='javascript'
+      theme="monokai"
       value={code}
       onChange={onChange}
+      placeholder='
+      
+      Enter you Code Here!!'
+      fontSize="1.1rem"
+      wrapEnabled={true}
     />
   );
 };

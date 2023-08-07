@@ -3,7 +3,7 @@ import { HomePage } from "./Page/HomePage"
 function App() {
 
   return (
-    <div>
+    <div style={{width:"80%",margin:'auto'}}>
       <HomePage/>
     </div>
   )

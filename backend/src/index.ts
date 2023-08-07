@@ -3,10 +3,13 @@ import convertCodeRouter from "./route/convertcode.route";
 import codeDebuggerRoute from "./route/codeDebugger.route";
 import codeQualityRoute from "./route/codeQualityChecker";
 const express = require("express");
+const cors = require('cors')
 
 const app: Express = express();
 
 app.use(express.json());
+
+app.use(cors());
 
 app.use("/convert", convertCodeRouter);
 
