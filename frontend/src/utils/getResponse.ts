@@ -1,6 +1,6 @@
 import axios from "axios";
 
-let baseURL = "http://localhost:8080/";
+let baseURL = "https://code-converter-ifoj.onrender.com/";
 
 interface Convert {
   code: string;
@@ -16,10 +16,10 @@ interface Input {
 async function getResponse(input: Input): Promise<string | any> {
   try {
     const response = await axios.post(`${baseURL}${input.endpoint}`, input.input);
-    console.log(response.data.code);
+    //console.log(response.data.code);
     return response.data.code;
   } catch (err:any) {
-    console.log(err);
+   // console.log(err);
     return err.message;
   }
 }

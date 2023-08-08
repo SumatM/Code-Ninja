@@ -34,7 +34,7 @@ export const HomePage = () => {
         let cmd = { endpoint: 'convert', input: { code, language: selectedLanguage } }
         let response: string = await getResponse(cmd);
         setLoading(false);
-        console.log(response);
+       // console.log(response);
         setOutput(response);
     }
 

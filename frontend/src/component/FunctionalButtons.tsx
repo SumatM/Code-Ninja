@@ -8,7 +8,7 @@ interface Button{
 
 
 export const FunctionalButtons = ({title,action,icon}:Button) => {
-   console.log(icon)
+   
   return (
     <div>
       <button style={{display:"flex",alignItems:'center',justifyContent:'space-between'}} onClick={action}>{icon} {title}</button>  
