@@ -5,6 +5,10 @@
 
 Code Ninja is a versatile tool that serves as a code converter, code quality checker, and code debugger. It empowers developers to streamline their coding workflow and enhance code quality effortlessly.
 
+**Note:**
+
+Might be the functionality will not work properly, as I have used the OPENAI free one-month API, which will expire after one month. So the website may not work correctly. However, you can watch a video demonstration of the Code Ninja functionality [here](https://example.com/your-video-link).
+
 ## Features
 
 - **Code Conversion:** Convert code between various programming languages effortlessly.
