@@ -7,7 +7,7 @@ Code Ninja is a versatile tool that serves as a code converter, code quality che
 
 **Note:**
 
-Might be the functionality will not work properly, as I have used the OPENAI free one-month API, which will expire after one month. So the website may not work correctly. However, you can watch a video demonstration of the Code Ninja functionality [here](https://example.com/your-video-link).
+Might be the functionality will not work properly, as I have used the OPENAI free one-month API, which will expire after one month. So the website may not work correctly. However, you can watch a video demonstration of the Code Ninja functionality [here](https://drive.google.com/drive/folders/1ITYQAepLg3K67DvCKHZjBQnALdVf7fwe?usp=drive_link).
 
 ## Features
 
